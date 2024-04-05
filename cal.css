@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+    outline: none; 
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    padding: 15px;
+    padding-top: 20px;
+    background-color: #d2d6d811;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 5px #ffffff8a,
+                      5px 5px 5px rgba(6, 0, 0, 0.249);
+    display: grid;    /*oru flag kambam mari straight a pani vidum*/              
+    grid-template-columns: repeat(4,70px); /*first use panna grid oda extension mari tha ithu ithula nama kuduthurka btn evlo time andha div kula repeat aganu soluthu apram andha 70px btn size determine panuthu*/
+}
+
+#outputscreen{
+    grid-column: span 4;
+    width: 260px;
+    height: 55px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 5px #a4a4a481, /*ithu top and left a soludhu first apram second apram third one pixel scatter panra effect thrum*/
+                inset -5px -5px 12px rgba(255, 255, 255, 0.964); /*ithu bottom apram rgt side a soluthu apram third one density pathi soludhu last one color mention pananu*/   
+    font-size: 30px;
+    text-align: end;
+    color: rgba(0, 0, 0, 0.541);     
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    padding: 20px;
+}
+
+.calculator button{
+    margin: 10px;
+    padding: 15px;
+    background-color: #ecf0f3;
+    border: none;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 5px #ffffffea,
+                      5px 5px 5px rgba(6, 0, 0, 0.251);
+}
+
+.equal{
+    width: 115px;
+}
